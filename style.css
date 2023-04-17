@@ -1,0 +1,564 @@
+/* NAVBAR CSS */
+.navbar {
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    width: 4rem;
+    height: 3.1rem;
+    margin-bottom: -3px;
+}
+
+#nav {
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: -8px;
+    border-bottom: 2px solid;
+    background-color: #000000;
+}
+
+#nav ul {
+    display: flex;
+    background: none;
+    align-items: center;
+}
+
+#nav ul li {
+    list-style: none;
+    background: none;
+}
+
+#nav ul li a {
+    font-size: 0.8rem;
+    margin: 4px 12px;
+    background: none;
+    color: rgb(174 201 215);
+    border-radius: 22px;
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+#nav ul li a:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+}
+
+.login {
+    color: rgb(235, 234, 229);
+    margin: 0.8rem 1.5rem 1rem 1.5rem;
+    padding: 4px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 6px;
+    float: right;
+    clear: both;
+    position: absolute;
+    right: 3rem;
+    clear: right;
+}
+
+.login:hover {
+    color: rgb(0, 0, 249);
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+.signup {
+    clear: right;
+    color: rgb(227, 227, 219);
+    margin: .8rem 1rem;
+    padding: 4px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 6px;
+    float: right;
+    position: absolute;
+    right: -4px;
+}
+
+.signup:hover {
+    color: rgb(26, 255, 0);
+    border-radius: 6px;
+}
+
+.hamburg {
+    color: blue;
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    border: 2px solid firebrick;
+    display: none;
+}
+
+/* MEDIA QUERY USE IN NAVBAR */
+
+@media only screen and (max-width: 770px) {
+
+    #nav {
+        transition: all 0.3s ease-out;
+        background: none;
+    }
+
+    .visibality-class {
+        opacity: 0;
+    }
+
+    #nav ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 0 112%;
+    }
+
+    .h-nav {
+        width: 100%;
+    }
+
+    .visibality-class {
+        opacity: 0;
+    }
+
+    .hamburg {
+        display: inline;
+        position: absolute;
+        cursor: pointer;
+        top: 0.5rem;
+        left: 4rem;
+        border: none;
+        background: none;
+    }
+}
+
+
+/* CONTENT SECTION */
+
+/* IMAGES */
+section {
+    width: 100%;
+}
+
+.heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.3rem;
+    margin: -30px 8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dots {
+    text-align: center;
+}
+
+.slide_container {
+    position: relative;
+    margin: auto;
+}
+
+.img {
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+
+}
+
+.img img {
+    width: 94vw;
+    height: 90vh;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* SPECIALITIES CSS */
+.card_Specialities {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    border-top: 1px inset(0, 0, 0, 0.1);
+}
+
+.card_Specialities div {
+    margin: 1rem;
+}
+
+.card-body img {
+    height: 53%;
+    width: 83%;
+}
+
+.btn {
+    border: 3px solid silver;
+    border-radius: 1rem;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    background-color: rgba(2, 2, 2, 0.815);
+    font-size: 1rem;
+    padding: .4rem;
+    margin: 1rem;
+}
+
+.btn:hover {
+    color: yellowgreen;
+}
+
+/* About Us css */
+.AboutUs {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.AboutUs p {
+    padding: 1rem;
+}
+
+.allHeading {
+    text-align: center;
+    justify-content: center;
+    color: rgb(101 126 166);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    display: inline;
+    margin-top: -1rem;
+}
+
+.button {
+    text-align: center;
+    margin: 1rem;
+}
+
+.JoinUs {
+    border: 2px solid red;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: .4rem 1rem;
+    pointer-events: cursor;
+}
+
+.JoinUs:hover {
+    border: 2px solid green;
+
+}
+
+.footer_glance h1 {
+    font-weight: bold;
+    color: rgb(83, 199, 83);
+}
+
+.footer_glance {
+    text-align: center;
+}
+
+.glance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.glance div {
+    padding: 1rem;
+    list-style: none;
+    background: linear-gradient(270deg, #59c8b8, #717171);
+    width: 10%;
+    height: 20vh;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.glance_list p {
+    background: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.glance_list:hover {
+    background: linear-gradient(20deg, #59c8b8, #717171);
+}
+
+/* CONTACT AND SUGGESTOIN */
+.frame3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+}
+
+.contact_us p {
+    font-size: 1rem;
+    border-radius: 7px;
+    margin: 1rem;
+    border: 2px solid red;
+    padding: 1rem;
+}
+
+.details>p:hover {
+    font-size: 1.1rem;
+}
+
+.suggestion h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.suggestion {
+    padding: 0 12rem;
+}
+
+.send {
+    text-align: center;
+}
+
+.send button:hover {
+    color: blue
+}
+
+.suggestion button {
+    padding: .5rem 4rem;
+    border-radius: 1.4rem;
+    color: red;
+    border: 2px solid;
+}
+
+.send-message {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.send-message input {
+    margin: .5rem;
+    border: 2px solid;
+    padding: .6rem 1rem;
+    border-radius: 1.4rem;
+}
+
+.send-message>input:hover {
+    border: 2px solid blueviolet;
+}
+
+#message {
+    height: 3rem;
+}
+
+/* FOOTER */
+
+
+.contact_us {
+    margin: 0 20%;
+    border-radius: 2rem;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.details p,
+strong {
+    width: 500px;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+/* FOOTER */
+
+.footer>div {
+    width: 33vw;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-top: 4rem;
+    border: 2px solid;
+}
+
+.footer_logo {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_logo img {
+    height: 37vh;
+    width: 23vw;
+}
+
+/*SOCIAL MEDIA */
+.social_media {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: 2px solid;
+    border-radius: 3rem;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.Office_Hours {
+    text-align: center;
+}
+
+.Office_Hours p {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.Office_Hours h3 {
+    font-size: 1.5rem;
+}
+
+/* Owner Message */
+.ownerMessage p {
+    padding: 1rem;
+}
+
+.ownerMessage img {
+    height: 33vh;
+    width: 23vw;
+    margin-top: 1rem;
+}
+
+.footer_heading {
+    color: #007bb5;
+    border-bottom: 2px solid #bb0000;
+    display: inline;
+}
+
+/* Usefull_Links */
+
+.Usefull_Links {
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer_widget ul {
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+.footer_widget ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.footer_widget ul li :hover {
+    color: rgb(0, 85, 255);
+}
+
+.footer_widget ul li {
+    list-style: none;
+    padding: .4rem;
+    margin: 1rem;
+    color: rgb(204, 212, 227);
+}
+
+.copyright {
+    text-align: center;
+    color: wheat;
+    bottom: 0;
+}
+
+.copyright h3 {
+    background-color: black;
+    display: block;
+    margin: 0;
+}
+
+
+/* DUMMY.HTML CSS */
+
+.dummycontainer {
+    text-align: center;
+
+}
+
+.dummycontainer button a {
+    text-decoration: none;
+}
+
+.home {
+    border: 2PX solid blueviolet;
+    border-radius: 2rem;
+}
+
+.home>a:hover {
+    color: #bb0000;
+}
+
+/* THE END */

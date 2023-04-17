@@ -1,0 +1,270 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(174 201 215);
+
+}
+
+.container {
+    display: inline;
+    border: 3px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+.box {
+    text-align: center;
+}
+
+#navbar {
+    background-color: rgb(0, 0, 0);
+    margin-top: -1.3rem;
+}
+
+#navbar ul {
+    font-size: large;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+#navbar ul li {
+    color: rgb(239, 231, 231);
+    list-style: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+#navbar ul li:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.hamburg {
+    color: blue;
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    border: 2px solid firebrick;
+    display: none;
+}
+
+
+#heading {
+    color: #fbfbfb;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+#box1 {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    border-radius: 12px;
+}
+
+#box1 h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    display: inline;
+    border-bottom: 0.3rem solid black;
+}
+
+
+#box2 {
+    width: auto;
+    margin: 0 1rem;
+    padding: 0 1rem 3rem 1rem;
+    border-radius: 12px;
+    display: block;
+}
+
+.Signup {
+    font-size: 1.3rem;
+}
+
+.btn-signup-login {
+    color: rgb(227, 227, 219);
+    margin: .8rem 1rem;
+    padding: 4px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.btn-signup:hover {
+    color: rgb(26, 255, 0);
+    border-radius: 6px;
+}
+
+#username {
+    font-size: 1rem;
+    padding: 8px;
+    margin: 4px;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 12px;
+    border: 3px solid black;
+    width: 30%;
+}
+
+#password,
+#new_password {
+    width: 30%;
+    font-size: 1rem;
+    padding: 8px;
+    margin: 4px;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+.forgotpass {
+    margin: 8px 0 -1rem 0;
+    padding: 7px;
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#Submit {
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 12%;
+    text-align: center;
+    align-items: center;
+    height: 12%;
+    background-color: rgb(232, 232, 232);
+}
+
+
+#Submit:hover {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(231, 231, 106, 0.607);
+}
+
+
+@media only screen and (max-width:500px) {
+
+
+    #navbar {
+        transition: all 0.3s ease-out;
+    }
+
+    #navbar ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .h-nav {
+        height: 2.7rem;
+        width: 100%;
+    }
+
+    .hamburg {
+        display: inline;
+        position: absolute;
+        cursor: pointer;
+        top: 0.3rem;
+        left: 0;
+        border: none;
+        background: none;
+    }
+
+    #username {
+        width: 70%;
+    }
+
+    #password {
+        width: 70%;
+    }
+
+    #box1 h1 {
+        font-size: 1.5rem;
+    }
+
+    #box1 h2 {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .h-nav {
+        padding-right: 21rem;
+    }
+
+    .container {
+        width: 100vw;
+        padding-right: 21rem;
+    }
+
+
+    .hamburg {
+        display: inline;
+        position: absolute;
+        cursor: pointer;
+        top: 0.3rem;
+        left: 0;
+        border: none;
+        background: none;
+    }
+
+    #username {
+        width: 70%;
+    }
+
+    #password {
+        width: 70%;
+    }
+
+    #box1 {
+        margin: 0px 3rem;
+        width: 95%;
+    }
+
+    #box2 {
+        margin: 0px 3rem;
+        width: 95%;
+    }
+
+    #box1 h1 {
+        font-size: 1.5rem;
+    }
+
+    #box1 h2 {
+        font-size: 1.7rem;
+    }
+
+    .box {
+        width: 100vw;
+    }
+
+    #Submit {
+        padding: 0rem;
+        margin: 0 60%;
+    }
+}
+
+@media screen and (max-width:240px) {
+    #Submit {
+        padding: 0rem;
+        margin: 0 60%;
+        width: 50%;
+    }
+}
+
+.login_nav {
+    margin-left: 13px;
+}
+
+/* THE END */

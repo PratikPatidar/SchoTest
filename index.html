@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoTest</title>
+
+    <link rel="import" href="dummy.html">
+    <link rel="import" href="login.html">
+    <link rel="import" href="register.html">
+    <link rel="Stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            background: rgb(246, 246, 246);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div class="navbar">
+
+            <navbar>
+                <nav id="nav" class="h-nav">
+                    <div class="logo">
+                        <img src="./IMAGES/logo.png" alt="SchoTest">
+                    </div>
+                    <ul class="visibality-class nav-list">
+                        <li class="items"> <a href="/index.html">HOME</a></li>
+                        <li class="items"> <a href="/dummy.html">ABOUT US</a></li>
+                        <li class="items"> <a href="/dummy.html">ANNOUNCEMENTS</a></li>
+                        <li class="items"> <a href="/dummy.html">COURSES</a></li>
+                        <li class="items"> <a href="/dummy.html">BLOGS</a></li>
+                        <li class="items"> <a href="/dummy.html">EVENTS</a></li>
+                        <li class="items"> <a href="/dummy.html">CONTACT US</a></li>
+                        <li class="items"> <a href="/dummy.html">GALLERY</a></li>
+                    </ul>
+                    <div class="rightnav visibality-class"></div>
+                    <div class="hamburg ">&#9776</div>
+                    <a href="/login.html">
+                        <button class="login"> Login </button>
+                    </a>
+                    <a href="./register.html">
+                        <button class="signup" onclick="signup"> Signup </button>
+                    </a>
+
+                </nav>
+            </navbar>
+        </div>
+
+        <!-- SECTION -->
+        <section>
+            <div class="container">
+                <!-- HEADING -->
+                <div class="heading">
+                    <h1>Welcome to Navodaya Knowledge City</h1>
+                </div>
+
+                <!-- IMAGES -->
+                <div class="slide_container">
+                    <div class="img fade">
+                        <img class="slide_image" src="./IMAGES/1.jpg" alt="Navodaya">
+                    </div>
+                    <div class="img fade ">
+                        <img class="slide_image" src="./IMAGES/5.jpg" alt="Navodaya">
+                    </div>
+                    <div class="img fade ">
+                        <img class="slide_image" src="./IMAGES/6.jpg" alt="Navodaya">
+                    </div>
+                    <div class="img fade">
+                        <img class="slide_image" src="./IMAGES/4.png" alt="Navodaya">
+                    </div>
+
+                    <br>
+                    <!-- The dots/circles -->
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <div class="button">
+                        <a href="./register.html">
+                            <button class="JoinUs">
+                                REGISTER
+                            </button></a>
+                    </div>
+                </div>
+
+                <!-- Our Specialities-->
+                <div class="Specialities">
+                    <div class="allHeading">
+
+                        <h1>Our Facilities
+                        </h1>
+                    </div>
+                    <div class="card_Specialities">
+                        <div class="card-body">
+                            <img src="./IMAGES/acClassroom.jpg" alt="CLASSROOM" srcset="">
+                            <h5 class="card-title">AC Classroom</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                                accusantium ipsa hic?
+                            </p>
+                            <a href="/dummy.html" class="btn">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/library.jpg" alt="Libraries">
+                            <h5 class="card-title">Libraries</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat!....
+                            </p>
+                            <a href="/dummy.html" class="btn  ">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/ArtRoom.jpg" alt="Art Room">
+                            <h5 class="card-title">Art Room</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat!....
+                            </p>
+                            <a href="/dummy.html" class="btn  ">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/compLab.jpg" alt="Computer Lab">
+                            <h5 class="card-title">Computer Lab</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat!....
+                            </p>
+                            <a href="/dummy.html" class="btn  ">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/DanceStudiojpg..jpg" alt="DanceStudio">
+                            <h5 class="card-title">Dance Studio</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat!....
+                            </p>
+                            <a href="/dummy.html" class="btn ">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/musicRoom.jpg" alt="Music Room">
+                            <h5 class="card-title">Music Room</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat!....
+                            </p>
+                            <a href="/dummy.html" class="btn  ">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/playground.jpg" alt="playground">
+                            <h5 class="card-title">Playground</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat!....
+                            </p>
+                            <a href="/dummy.html" class="btn  ">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/scienceLab.jpg" alt="scienceLab">
+                            <h5 class="card-title">Science Lab</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat!....
+                            </p>
+                            <a href="/dummy.html" class="btn  ">Read More</a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./IMAGES/smartClassroom.jpg" alt="smartClassroom">
+                            <h5 class="card-title">Smart Classroom</h5>
+                            <p class="card-text">Lorem ipsum, amet consectetur adipisicing elit. Autem quis
+                                dolore quaerat! ....
+                            </p>
+                            <a href="/" class="btn  ">Read More</a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!-- TEAM -->
+                <div class="team">
+                    <div class="allHeading">
+                        <h1>OUR TEAM </h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quidem officiis, ullam
+                        molestiae aut iste quis eius? At voluptates beatae, ab iste odio aperiam, commodi corporis
+                        deleniti itaque distinctio magnam nam asperiores doloribus hic ullam sapiente aliquam, sint
+                        culpa reiciendis quidem corrupti cum. Ipsum molestias, harum unde repudiandae qui minima
+                        obcaecati nobis voluptatem doloremque aliquam?</p>
+                </div>
+
+
+                <!-- GLANCE -->
+                <div class="footer_glance">
+                    <div class="allHeading">
+                        <h1>Our School At Glance</h1>
+                    </div>
+
+                    <div class="glance">
+                        <div class="glance_list">BRANCHES
+                            <p>4</p>
+                        </div>
+
+                        <div class="glance_list">YEARS
+                            <p>30 Years of Sucess</p>
+                        </div>
+
+                        <div class="glance_list">RANK
+                            <p>1st</p>
+                        </div>
+                        <div class="glance_list">STUDENTS
+                            <p>30000+</p>
+                        </div>
+                        <div class="glance_list">STAFF
+                            <p>400+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ABOUT US -->
+                <div class="AboutUs">
+                    <div class="allHeading">
+                        <h1>ABOUT US</h1>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde fuga distinctio illum at.
+                        Consequuntur quam tenetur a eligendi cupiditate ab. Architecto pariatur cupiditate autem
+                        voluptatem. Inventore fugit quis quod ab itaque praesentium doloremque nobis. Rem cumque
+                        suscipit quos vitae ipsam accusamus in eos eum?</p>
+                    <div class="button">
+                        <a href="./register.html">
+                            <button class="JoinUs">
+                                JOIN US
+                            </button></a>
+                    </div>
+                </div>
+
+                <!-- CONTACT US -->
+                <div class="contact_us">
+                    <div class="allHeading">
+                        <h1>Contact Us</h1>
+                    </div>
+                    <div class="details">
+
+                        <p class="address"><strong> Address:<br></strong>- 21 Saket Nager Bhopal M.P. India (450000)</p>
+                        <p class="number"><strong>Mobile No:<br></strong>+91 000 000 0000</p>
+                        <p class="Email"><strong>EMAIL:<br></strong>@example.com </p>
+                    </div>
+                </div>
+
+                <!-- SUGGESTION FORM -->
+                <div class="suggestion">
+                    <div class="allHeading">
+                        <h1>Any Suggestion</h1>
+                    </div>
+                    <div class="send-message">
+                        <input type="text" id="Name" placeholder="Your Name">
+                        <input type="email" id="your-email" placeholder="Enter Your Email">
+                        <input type="text" id="city" placeholder="Your City">
+                        <input type="text" id="message" placeholder="Enter Your Message">
+                    </div>
+                    <div class="send">
+                        <a href="./index.html">
+
+                            <button id="send">Send</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer">
+
+                <div class="logo_slot">
+                    <div class="footer_logo">
+                        <img src="./IMAGES/logo.png" alt="SchoTest">
+                    </div>
+
+                    <div class="social_media">
+
+                        <a href="/dummy.html" title="facebook" class="fa fa-facebook"></a>
+                        <a href="/dummy.html" title="twitter" class="fa fa-twitter"></a>
+                        <a href="/dummy.html" title="linkedin" class="fa fa-linkedin"></a>
+                        <a href="/dummy.html" title="youtube" class="fa fa-youtube"></a>
+                        <a href="/dummy.html" title="instagram" class="fa fa-instagram"></a>
+
+                    </div>
+                    <div class="Office_Hours">
+                        <h3>Office Hour</h3>
+                        <p>Monday – Friday: 8 : 30am – 5pm
+                            Saturday: 8 : 30am – 12 : 30pm</p>
+                    </div>
+                </div>
+
+                <div class="Usefull_Links">
+                    <div class="footer_widget">
+                        <div class="footer-widget-heading">
+                            <h2 class="footer_heading">USEFUL LINKS</h2>
+                        </div>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/dummy.html">About</a></li>
+                            <li><a href="/dummy.html">Why Us</a></li>
+                            <li><a href="/dummy.html">Admission</a></li>
+                            <li><a href="/dummy.html">Academics</a></li>
+                            <li><a href="/dummy.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ownerMessage">
+                    <h2 class="footer_heading">OWNER MESSAGE</h2>
+                    <img src="./IMAGES/639978ca45cd4.jpeg" alt="message">
+                    <p>"Hello Everyone, The term 'education' encompasses more than just knowledge and knowing. It is a
+                        harmonious blend of
+                        academia, arts, sports, emotions, attitudes, creativity, nature and life itself! And in the
+                        world we have built today,
+                        the one who is adept in all these areas is the one who succeeds. I have always believed that,
+                        words of wisdom best describe the present state of NKC. ”.</p>
+                    <h4>- Santosh Pandey</h4>
+                </div>
+            </div>
+        </footer>
+
+        <!-- COPYRIGHT -->
+        <div class="copyright">
+            <h3>COPYRIGHT© 2023
+            </h3>
+            <h3> NAVODAYA KNOWLEDGE CITY</h3>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
